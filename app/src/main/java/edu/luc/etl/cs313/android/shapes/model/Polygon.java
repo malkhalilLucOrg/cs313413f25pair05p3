@@ -8,18 +8,17 @@ import java.util.List;
  */
 public final class Polygon extends Group {
 
-    public Polygon(final Point... points) {
-        super(points);
-    }
+  public Polygon(final Point... points) {
+    super(points);
+  }
 
-    @SuppressWarnings("unchecked")
-    public List<? extends Point> getPoints() {
-        return (List<? extends Point>) getShapes();
-    }
+  @SuppressWarnings("unchecked")
+  public List<? extends Point> getPoints() {
+    return (List<? extends Point>) getShapes();
+  }
 
-    @Override
-    public <Result> Result accept(final Visitor<Result> v) {
-        // Done
-        return v.onPolygon(this);
-    }
+  @Override
+  public <Result> Result accept(final Visitor<Result> v) {
+    return v.onPolygon(this);
+  }
 }
