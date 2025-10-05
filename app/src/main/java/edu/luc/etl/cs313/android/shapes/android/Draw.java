@@ -9,12 +9,12 @@ import edu.luc.etl.cs313.android.shapes.model.*;
  * A Visitor for drawing a shape to an Android canvas.
  */
 public class Draw implements Visitor<Void> {
-  // TODO entirely your job (except onCircle)
+  // Done
   private final Canvas canvas;
   private final Paint paint;
   public Draw(final Canvas canvas, final Paint paint) {
-    this.canvas = canvas; // FIXME
-    this.paint = paint; // FIXME
+    this.canvas = canvas; // Done
+    this.paint = paint; // Done
     paint.setStyle(Style.STROKE);
   }
   @Override

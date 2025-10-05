@@ -9,7 +9,7 @@ import java.util.List;
  */
 public class BoundingBox implements Visitor<Location> {
 
-  // TODO entirely your job (except onCircle)
+  // Done
   @Override
   public Location onCircle(final Circle c) {
     final int radius = c.getRadius();
